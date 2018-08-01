@@ -27,17 +27,17 @@
                     </a>
 
                   <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}">
+                    {{-- <a class="dropdown-item" href="{{ route('logout') }}">
                                     {{ __('Mi Perfil') }}
-                                      </a>
+                                      </a> --}}
 
                     <a class="dropdown-item" href="{{ route('servicio') }}">
                           {{ __('Mis servicios') }}
                     </a>
 
-                    <a class="dropdown-item" href="{{ route('logout') }}">
+                    {{-- <a class="dropdown-item" href="{{ route('logout') }}">
                                     {{ __('Mis Contrataciones') }}
-                                      </a>
+                                      </a> --}}
 
                     <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="{{ route('logout') }}"

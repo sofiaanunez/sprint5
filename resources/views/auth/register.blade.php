@@ -59,7 +59,7 @@
 
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo electrónico') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Repetir contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -96,7 +96,7 @@
 
 
                         <div class="form-group row">
-                            <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesion') }}</label>
+                            <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
 
                             <div class="col-md-6">
                                 <input id="profesion" type="text" class="form-control{{ $errors->has('profesion') ? ' is-invalid' : '' }}" name="profesion" value="{{ old('profesion') }}" required autofocus>
@@ -109,20 +109,20 @@
                             </div>
                         </div>
                       </div>
-                        <div class="form-group row">
-                            <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Genero') }}</label>
-                            <div class="col-md-6">
-                              @php $generos = ['Masculino', 'Femenino','Otro',];@endphp
-                              @foreach($generos as $genero)
-                                <input id="genero" type="radio" class="" name="genero" value="{{ old('genero') }}" autofocus {{ old('genero') }} selected ? > <label for="">{{ $genero }}</label> <br>
-                                @endforeach
-                            </div>
-                        </div>
+                      <div class="form-group row">
+                          <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
+
+                          <div class="col-md-6">
+                              <input id="genero" type="radio" class="" name="genero" value="m" autofocus> <label for="">Masculino</label> <br>
+                              <input id="genero" type="radio" class="" name="genero" value="f" autofocus> <label for="">Femenino</label><br>
+                              <input id="genero" type="radio" class="" name="genero" value="o" autofocus> <label for="">Otros</label> <br>
+                          </div>
+                      </div>
 
 
-                          <label for="pais" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione un Pais') }}</label> <select class="form-control" id="pais" name="pais" value ="pais"   required autofocus>
+                          <label for="pais" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione un país') }}</label> <select class="form-control" id="pais" name="pais" value ="pais"   required autofocus>
                             <option></option>
-                            <option selected ? $ele == {{ old('pais') }} >Argentina</option>
+                            <option>Argentina</option>
                             <option>Brasil</option>
                             <option>Chile</option>
                             <option>Colombia</option>
@@ -137,7 +137,7 @@
                               </span>
                           @endif
 
-                          <label for="provincia" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una Provincia') }}</label> <select class="form-control" id="sel1" name="provincia" value ="{{ old('provincia') }}" required autofocus>
+                          <label for="provincia" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una provincia') }}</label> <select class="form-control" id="sel1" name="provincia" value ="{{ old('provincia') }}" required autofocus>
                               <option></option>
                               <option>Buenos Aires</option>
                               <option>Santa Fe</option>
@@ -153,7 +153,7 @@
                                 </span>
                             @endif
 
-                            <label for="ciudad" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una Ciudad') }}</label> <select class="form-control" id="sel1" name="ciudad" value ="{{ old('ciudad') }}" required autofocus>
+                            <label for="ciudad" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una ciudad') }}</label> <select class="form-control" id="sel1" name="ciudad" value ="{{ old('ciudad') }}" required autofocus>
                               <option></option>
                               <option>Capital Federal</option>
                               <option>Gran Buenos Aires</option>
