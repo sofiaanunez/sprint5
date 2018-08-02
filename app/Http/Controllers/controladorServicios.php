@@ -80,7 +80,7 @@ class controladorServicios extends Controller
     );
 
     //echo "Se agregó tu servicio";
-    return redirect()->back()->with('success', true);
+    return redirect()->route('servicio');
 
     }
 

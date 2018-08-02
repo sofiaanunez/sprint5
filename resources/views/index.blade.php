@@ -11,6 +11,7 @@
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="/css/estilo.css">
 
        </head>
          <title></title>
@@ -64,30 +65,22 @@
 
       <div class="container">
         <div class="row">
+
           @foreach ($mostrar as $servicio)
           <div class="col-sm-4">
             <div class="panel panel-primary">
-
                 <div class="panel-heading">{{$servicio->rubro}}</div>
-
-
-              <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
               <div class="panel-footer">{{$servicio->descripcion}}</div>
             </div>
           </div>
+
           @endforeach
 
         </div>
 
-
-
       </div><br><br>
 
       {{ $mostrar->links() }}
-
-
-
-      
 
 
             @include('plantilla-final.footer')

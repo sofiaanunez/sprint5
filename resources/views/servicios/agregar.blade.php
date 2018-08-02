@@ -26,12 +26,6 @@
 
   <form class="" action="/servicio/agregar" method="post" enctype="multipart/form-data"><br>
 
-    @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-      Tu servicio ha sido añadido al listado.
-    </div>
-    @endif
-
     <h3 class="text-center">Agrega tu servicio!</h3>
     <br>
     <div class="container">
