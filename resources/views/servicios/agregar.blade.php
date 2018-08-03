@@ -24,7 +24,11 @@
         </div>
       @endif --}}
 
+<<<<<<< HEAD
   <form class="" action="/servicio/agregar" method="post"><br>
+=======
+  <form class="" action="/servicio/agregar" method="post" enctype="multipart/form-data"><br>
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
 
     <h3 class="text-center">Agrega tu servicio!</h3>
     <br>

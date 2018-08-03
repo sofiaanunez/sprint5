@@ -1,126 +1,13 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
+<<<<<<< HEAD
 body {font-family: 'Roboto', sans-serif; font-size: 20px;background-color: #4F89C4;}
+=======
+body {font-family: 'Roboto', sans-serif;}
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
 
-/*HEADER */
-
-header {
-  position: absolute;
-  right: 5%;
-  width: 90%;
-  padding-top: 3%;
-}
-header h2 {
-  font-size: 1em;
-}
-header h2 a {
-  float: left;
-  font-size: 0.9em;
-  text-decoration: none;
-  color: black;
-  padding: 0.3%;
-}
-
-header nav li{
-  float: right;
-  font-size: 0.8em;
-  list-style: none;
-  font-weight: bold;
-}
-
-header nav li a:hover {
-  color: white;
-  border-bottom: 3px solid white;
-
-}
-
-header nav li a{
-  text-decoration: none;
-  padding: 1vw;
-  color: black;
-}
-
-.divisor {
-  width: 100%;
-  height: 3vh;
-  background-color: #4F89C4;
-}
-.hero {
-  display: flex;
-  flex-direction: column;
-  background-image: url(Images/ecommerce-banner.jpg);
-  background-repeat: no-repeat;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  color: white;
-}
-.hero h1{
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  flex-basis: 12%;
-  text-shadow: 1.5px 1.5px black;
-}
-.hero h3{
-  display: flex;
-  justify-content: center;
-  font-size: 1em;
-  flex-basis: 15%;
-  text-shadow: 1.5px 1.5px black;
-}
-
-.hero form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background-color: rgba(255,255,255,0.35);
-  height: 25%;
-}
-
-.hero form input{
-  width: 80%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border-color: none;
-}
-.hero form .btn {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  width: 15%;
-  background-color: #4F89C4;
-  height: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero form .btn:hover {
-  color: #4F89C4;
-  background-color: white;
-}
-
-/* FIN HEADER */
-
-/* RUBROS */
-
-.opciones {
-  width: 100%;
-  background-color: white;
-  border-radius: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.opciones h3 {
-  margin-top: 2%;
+ul.pagination {
   text-align: center;
+<<<<<<< HEAD
 }
 
 .opciones .iconos {
@@ -405,4 +292,8 @@ ul.pagination{
   padding-left: 44%;
 }
 
+=======
+  margin: 0 auto;
+  padding: 8px;
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
 }

@@ -18,8 +18,8 @@ Route::get('/', 'controladorIndex@mostrarServicios');
 
 Route::get('/servicio', 'controladorServicios@listarServicios')->name('servicio');
 
-Route::get('/servicio/agregar', 'controladorServicios@agregarServicios');
-Route::post('/servicio/agregar', 'controladorServicios@validarServicios');
+Route::get('/servicio/agregar', 'controladorServicios@agregarServicios')->name('agregar');
+Route::post('/servicio/agregar', 'controladorServicios@validarServicios')->name('agregar');
 Route::get('/servicio/faq', 'controladorServicios@faq');
 
 Route::get('/servicio/editar/{id}', 'controladorServicios@editarServicios');

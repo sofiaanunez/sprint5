@@ -5,12 +5,24 @@
   <head>
     <title>Servici.AR</title>
       <meta charset="utf-8">
+<<<<<<< HEAD
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="/css/estilo.css">
+=======
+
+         <link rel="stylesheet" href="/css/estilo.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="/css/estilo.css">
+
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
        </head>
          <title></title>
        <body>
@@ -65,8 +77,13 @@
           @foreach ($mostrar as $servicio)
           <div class="col-sm-4">
             <div class="panel panel-primary">
+<<<<<<< HEAD
                 <div class="panel-heading"><h4>{{$servicio->rubro}}</h4></div>
               <div class="panel-footer"><h6>{{$servicio->descripcion}}</h6></div>
+=======
+                <div class="panel-heading">{{$servicio->rubro}}</div>
+              <div class="panel-footer">{{$servicio->descripcion}}</div>
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
             </div>
           </div>
 
@@ -78,6 +95,10 @@
 
       {{ $mostrar->links() }}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
             @include('plantilla-final.footer')
 
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

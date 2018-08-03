@@ -37,9 +37,12 @@
                   </a>
 
                 <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                   <a class="dropdown-item" href="{{ route('perfil') }}">
                     {{ __('Mi perfil') }}
                   </a>
+=======
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
 
                   <a class="dropdown-item" href="{{ route('servicio') }}">
                         {{ __('Mis servicios') }}

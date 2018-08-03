@@ -18,14 +18,28 @@
                     </a>
 
                   <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                     <a class="dropdown-item" href="{{ route('perfil') }}">
                       {{ __('Mi perfil') }}
                     </a>
+=======
+                    {{-- <a class="dropdown-item" href="{{ route('logout') }}">
+                                    {{ __('Mi Perfil') }}
+                                      </a> --}}
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
 
                     <a class="dropdown-item" href="{{ route('servicio') }}">
                       {{ __('Mis servicios') }}
                     </a>
+<<<<<<< HEAD
                     
+=======
+
+                    {{-- <a class="dropdown-item" href="{{ route('logout') }}">
+                                    {{ __('Mis Contrataciones') }}
+                                      </a> --}}
+
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
                     <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="{{ route('logout') }}"
                              onclick="event.preventDefault();
