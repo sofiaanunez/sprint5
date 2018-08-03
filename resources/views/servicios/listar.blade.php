@@ -5,20 +5,14 @@
     <div class="card">
 
   <h3 class="card-header">Listado de servicios</h3>
-  <h6 class="card-header">Edita y elimina tus servicios</h6>
   <div class="card-body">
 
-    @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-      Tu servicio ha sido eliminado.
-    </div>
-    @endif
     <div class="container">
       <table class="table table-striped">
         <thead>
           <tr>
             <th>Rubro</th>
-            <th>Descripcion</th>
+            <th>Descripción</th>
             <th>Comandos</th>
           </tr>
         </thead>
@@ -48,7 +42,7 @@
       </table>
     </div>
 
-<br><br>
+<br>
     <a href="/servicio/agregar" class="btn btn-dark">Agregar Servicio</a>
   </div>
 </div>

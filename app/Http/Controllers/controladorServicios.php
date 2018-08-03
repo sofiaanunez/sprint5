@@ -37,13 +37,13 @@ class controladorServicios extends Controller
 
          $servicios->rubro = $request->input('rubro');
          $servicios->descripcion = $request->input('descripcion');
-         $servicios->id_usuario = $request->input('id_usuario');
+         //$servicios->id_usuario = $request->input('id_usuario');
          $servicios->monto = $request->input('monto');
          $servicios->duracion = $request->input('duracion');
 
          $servicios->save();
 
-        return redirect()->back()->with('success', true);
+        return redirect()->route('servicio');
 
         }
 
@@ -53,7 +53,6 @@ class controladorServicios extends Controller
       $validacion = [
 
         'rubro' => 'required|alpha',
-        'id_usuario' => 'required',
         'descripcion' => 'required',
         // 'email' => 'required|email',
         'monto' => 'required|integer',
@@ -74,13 +73,18 @@ class controladorServicios extends Controller
       ];
 
       $this->validate($request,$validacion,$mensajes);
-       $servicio = Servicio::create(
-         $request->except(['_token', 'button'])
+       $servicio = Servicio::create([
+         'rubro'=> $request->input('rubro'),
+         'descripcion'=> $request->input('descripcion'),
+         'id_usuario'=> \Auth::user()->id,
+         'duracion'=> $request->input('duracion'),
+         'monto'=> $request->input('monto')
+         //$request->except(['_token', 'button'])
        // $request->only('rubro', 'descripcion', 'id_usuario', 'fecha_inicio', 'fecha_fin', 'monto')
-    );
+    ]);
 
     //echo "Se agregó tu servicio";
-    return redirect()->back()->with('success', true);
+    return redirect()->route('servicio');
 
     }
 
@@ -90,7 +94,7 @@ class controladorServicios extends Controller
 
       $servicios->delete();
 
-      return redirect()->back()->with('success', true);
+      return redirect()->route('servicio');
 
     }
 

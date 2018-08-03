@@ -24,13 +24,7 @@
         </div>
       @endif --}}
 
-  <form class="" action="/servicio/agregar" method="post" enctype="multipart/form-data"><br>
-
-    @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-      Tu servicio ha sido añadido al listado.
-    </div>
-    @endif
+  <form class="" action="/servicio/agregar" method="post"><br>
 
     <h3 class="text-center">Agrega tu servicio!</h3>
     <br>
@@ -58,18 +52,6 @@
               @if ($errors->has('rubro'))
                   <span class="invalid-feedback" role="alert">
                       <strong>{{ $errors->first('descripcion') }}</strong>
-                  </span>
-              @endif
-          </div></div>
-
-          <div class="form-group row">
-          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ID usuario') }}</label>
-          <div class="col-md-4">
-              <input id="id_usuario" type="text" class="form-control{{ $errors->has('id_usuario') ? ' is-invalid' : '' }}" name="id_usuario" value="{{ old('id_usuario') }}" required autofocus>
-
-              @if ($errors->has('id_usuario'))
-                  <span class="invalid-feedback" role="alert">
-                      <strong>{{ $errors->first('id_usuario') }}</strong>
                   </span>
               @endif
           </div></div>

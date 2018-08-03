@@ -26,12 +26,6 @@
 
   <form class="" action="/servicio/editar/{{$servicios->id}}" method="post"><br>
 
-    @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-      Se han guardado las modificaciones de tu servicio.
-    </div>
-    @endif
-
     <h3 class="text-center">Edita tu servicio!</h3>
     <br>
     <div class="container">
@@ -57,18 +51,6 @@
             @if ($errors->has('rubro'))
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('descripcion') }}</strong>
-                </span>
-            @endif
-        </div></div>
-
-        <div class="form-group row">
-        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ID usuario') }}</label>
-        <div class="col-md-4">
-            <input id="id_usuario" type="text" class="form-control{{ $errors->has('id_usuario') ? ' is-invalid' : '' }}" name="id_usuario" value="{{$servicios['id_usuario']}}" required autofocus>
-
-            @if ($errors->has('id_usuario'))
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('id_usuario') }}</strong>
                 </span>
             @endif
         </div></div>

@@ -11,7 +11,7 @@
 |
 */
 
-
+Route::get('/perfil', 'perfilControlador@perfil')->name('perfil');
 
 Route::get('/', 'controladorIndex@headerIndex');
 Route::get('/', 'controladorIndex@mostrarServicios');

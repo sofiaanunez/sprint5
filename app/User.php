@@ -10,8 +10,7 @@ class User extends Authenticatable
     use Notifiable;
     protected $table = 'usuarios';
     protected $fillable = ['email', 'password', 'nombre', 'apellido',
-    'fecha_nacimiento', 'profesion', 'pais', 'provincia', 'ciudad', 'genero',
-    'avatar'];
+    'fecha_nacimiento', 'profesion','ciudad','avatar'];
 
     protected $dates=['fecha_nacimiento'];
     protected $primarykey=['id'];

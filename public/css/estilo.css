@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
-body {font-family: 'Roboto', sans-serif; font-size: 14px;background-color: #4F89C4;}
+body {font-family: 'Roboto', sans-serif; font-size: 20px;background-color: #4F89C4;}
 
 /*HEADER */
 
@@ -399,6 +399,10 @@ footer li{
 
 #legal {
   font-size: 1em;
+}
+
+ul.pagination{
+  padding-left: 44%;
 }
 
 }
