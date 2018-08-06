@@ -62,18 +62,6 @@
         </div></div>
 
         <div class="form-group row">
-        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('ID usuario') }}</label>
-        <div class="col-md-4">
-            <input id="id_usuario" type="text" class="form-control{{ $errors->has('id_usuario') ? ' is-invalid' : '' }}" name="id_usuario" value="{{$servicios['id_usuario']}}" required autofocus>
-
-            @if ($errors->has('id_usuario'))
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('id_usuario') }}</strong>
-                </span>
-            @endif
-        </div></div>
-
-        <div class="form-group row">
         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Duración (cantidad de días)') }}</label>
         <div class="col-md-4">
             <input id="duracion" type="text" class="form-control{{ $errors->has('duracion') ? ' is-invalid' : '' }}" name="duracion" value="{{$servicios['duracion']}}" required autofocus>

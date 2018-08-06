@@ -1,15 +1,6 @@
-
- <header>
+<header>
    <nav>
-     {{-- @if (false)
-       <li><a href="formulario.php">¡Registrate!</a></li>
-       <li> | </li>
-       <li><a href="login.php">Login</a></li>
-     @else
-       <li><a href="logout.php">Cerrar Sesion</a></li>
-       <li> | </li>
-       <li><a href="#">¡Bienvenido!</a></li>
-     @endif --}}
+
      <div class="btn-group float-right">
          <!-- Authentication Links -->
          @guest
@@ -27,17 +18,13 @@
                     </a>
 
                   <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}">
+                    <a class="dropdown-item" href="{{ route('perfil') }}">
                                     {{ __('Mi Perfil') }}
                                       </a>
 
                     <a class="dropdown-item" href="{{ route('servicio') }}">
                           {{ __('Mis servicios') }}
                     </a>
-
-                    <a class="dropdown-item" href="{{ route('logout') }}">
-                                    {{ __('Mis Contrataciones') }}
-                                      </a>
 
                     <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="{{ route('logout') }}"

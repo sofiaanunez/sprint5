@@ -23,7 +23,6 @@ class Servicios extends Migration
           $table->string('descripcion');
           $table->integer('monto');
           $table->string('duracion');
-          $table->string('img_srv')->default("default_avatar.png");
           $table->timestamps();
         });
     }

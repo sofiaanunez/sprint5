@@ -12,14 +12,17 @@
 */
 
 
+Route::get('/perfil', 'perfilControlador@perfil')->name('perfil');
 
 Route::get('/', 'controladorIndex@headerIndex');
+
 Route::get('/', 'controladorIndex@mostrarServicios');
 
 Route::get('/servicio', 'controladorServicios@listarServicios')->name('servicio');
 
-Route::get('/servicio/agregar', 'controladorServicios@agregarServicios');
-Route::post('/servicio/agregar', 'controladorServicios@validarServicios');
+Route::get('/servicio/agregar', 'controladorServicios@agregarServicios')->name('agregar');
+Route::post('/servicio/agregar', 'controladorServicios@validarServicios')->name('agregar');
+
 Route::get('/servicio/faq', 'controladorServicios@faq');
 
 Route::get('/servicio/editar/{id}', 'controladorServicios@editarServicios');
@@ -33,8 +36,8 @@ Route::get('/login', 'controladorGeneral@login');
 Route::get('/faq', 'controladorGeneral@faq');
 
 Route::get('/register', 'storageController@index');
-Route::post('/storage/create', 'storageController@save');
 
+Route::post('/storage/create', 'storageController@save');
 Route::get('storage/{archivo}', function ($archivo) {
      $public_path = public_path();
      $url = $public_path.'/storage/'.$archivo;
@@ -45,7 +48,5 @@ Route::get('storage/{archivo}', function ($archivo) {
      }
      //si no se encuentra lanzamos un error 404.
      abort(404);
-
 });
-
 Auth::routes();

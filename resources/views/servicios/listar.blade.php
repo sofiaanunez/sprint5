@@ -5,14 +5,8 @@
     <div class="card">
 
   <h3 class="card-header">Listado de servicios</h3>
-  <h6 class="card-header">Edita y elimina tus servicios</h6>
   <div class="card-body">
 
-    @if (session()->has('success'))
-    <div class="alert alert-success" role="alert">
-      Tu servicio ha sido eliminado.
-    </div>
-    @endif
     <div class="container">
       <table class="table table-striped">
         <thead>

@@ -21,10 +21,7 @@ class Usuarios extends Migration
            $table->string('apellido');
            $table->date('fecha_nacimiento');
            $table->string('profesion');
-           $table->string('pais');
-           $table->string('provincia');
            $table->string('ciudad');
-           $table->string('genero');
            $table->string('avatar')->default("default_avatar.png");
            $table->rememberToken();
            $table->timestamps();
