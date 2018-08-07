@@ -12,7 +12,7 @@
         <thead>
           <tr>
             <th>Rubro</th>
-            <th>Descripción</th>
+            <th>Descripcion</th>
             <th>Comandos</th>
           </tr>
         </thead>
@@ -42,7 +42,7 @@
       </table>
     </div>
 
-<br>
+<br><br>
     <a href="/servicio/agregar" class="btn btn-dark">Agregar Servicio</a>
   </div>
 </div>
