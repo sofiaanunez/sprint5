@@ -26,6 +26,12 @@
 
   <form class="" action="/servicio/editar/{{$servicios->id}}" method="post"><br>
 
+    @if (session()->has('success'))
+    <div class="alert alert-success" role="alert">
+      Se han guardado las modificaciones de tu servicio.
+    </div>
+    @endif
+
     <h3 class="text-center">Edita tu servicio!</h3>
     <br>
     <div class="container">
@@ -91,3 +97,4 @@
 </form>
   @endguest
 @endsection
+
