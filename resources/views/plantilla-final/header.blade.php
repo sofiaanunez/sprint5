@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 @guest
      <div class="container">
@@ -10,22 +9,15 @@
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
      <ul class="navbar-nav mr-auto">
-
-     <li class="nav-item">
-             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-             </li>
-
      <li class="nav-item">
              <a class="nav-link" href="../../login">Login</a>
            </li>
      <li class="nav-item">
                <a class="nav-link" href="../../register">Registrate</a>
            </li>
-
          </ul>
 
        </div>
-
        </div>
 @else
 
@@ -45,9 +37,18 @@
                   </a>
 
                 <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                   <a class="dropdown-item" href="{{ route('perfil') }}">
                                   {{ __('Mi Perfil') }}
                                     </a>
+=======
+<<<<<<< HEAD
+                  <a class="dropdown-item" href="{{ route('perfil') }}">
+                    {{ __('Mi perfil') }}
+                  </a>
+=======
+>>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
 
                   <a class="dropdown-item" href="{{ route('servicio') }}">
                         {{ __('Mis servicios') }}
@@ -65,6 +66,7 @@
                       </form>
                           </div>
                               </li>
+<<<<<<< HEAD
 
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                           @csrf
@@ -78,5 +80,9 @@
     </div>
 
     </div>
+=======
+      </ul>
+
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
 @endguest
      </nav>

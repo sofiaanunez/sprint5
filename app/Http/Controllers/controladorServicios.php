@@ -37,6 +37,10 @@ class controladorServicios extends Controller
 
          $servicios->rubro = $request->input('rubro');
          $servicios->descripcion = $request->input('descripcion');
+<<<<<<< HEAD
+=======
+         //$servicios->id_usuario = $request->input('id_usuario');
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
          $servicios->monto = $request->input('monto');
          $servicios->duracion = $request->input('duracion');
 
@@ -81,8 +85,15 @@ class controladorServicios extends Controller
          //$request->except(['_token', 'button'])
        // $request->only('rubro', 'descripcion', 'id_usuario', 'fecha_inicio', 'fecha_fin', 'monto')
     ]);
+<<<<<<< HEAD
     //echo "Se agregó tu servicio";
     return redirect()->route('servicio');
+=======
+
+    //echo "Se agregó tu servicio";
+    return redirect()->route('servicio');
+
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
     }
 
     public function eliminarServicio($id,Request $request){
@@ -91,7 +102,11 @@ class controladorServicios extends Controller
 
       $servicios->delete();
 
+<<<<<<< HEAD
     return redirect()->route('servicio');
+=======
+      return redirect()->route('servicio');
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
 
     }
 

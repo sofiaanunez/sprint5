@@ -8,7 +8,7 @@ class Registro extends Model
 {
   protected $table = 'usuarios';
   protected $fillable = ['email', 'password', 'nombre', 'apellido',
-  'fecha_nacimiento', 'profesion', 'pais', 'provincia', 'ciudad', 'genero'];
+  'fecha_nacimiento', 'profesion','ciudad'];
   protected $guarded = ['id'];
   protected $dates=['fecha_nacimiento'];
   protected $primarykey=['id'];

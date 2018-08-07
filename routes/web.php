@@ -11,7 +11,10 @@
 |
 */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
 Route::get('/perfil', 'perfilControlador@perfil')->name('perfil');
 
 Route::get('/', 'controladorIndex@headerIndex');
@@ -22,7 +25,10 @@ Route::get('/servicio', 'controladorServicios@listarServicios')->name('servicio'
 
 Route::get('/servicio/agregar', 'controladorServicios@agregarServicios')->name('agregar');
 Route::post('/servicio/agregar', 'controladorServicios@validarServicios')->name('agregar');
+<<<<<<< HEAD
 
+=======
+>>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
 Route::get('/servicio/faq', 'controladorServicios@faq');
 
 Route::get('/servicio/editar/{id}', 'controladorServicios@editarServicios');
