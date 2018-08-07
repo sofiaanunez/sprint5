@@ -109,61 +109,8 @@
                             </div>
                         </div>
                       </div>
-<<<<<<< HEAD
 
                             <label for="ciudad" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una localidad') }}</label> <select class="form-control" id="sel1" name="ciudad" value ="{{ old('ciudad') }}" required autofocus>
-=======
-<<<<<<< HEAD
-
-                            <label for="ciudad" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione localidad') }}</label> <select class="form-control" id="sel1" name="ciudad" value ="{{ old('ciudad') }}" required autofocus>
-=======
-                      <div class="form-group row">
-                          <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
-
-                          <div class="col-md-6">
-                              <input id="genero" type="radio" class="" name="genero" value="m" autofocus> <label for="">Masculino</label> <br>
-                              <input id="genero" type="radio" class="" name="genero" value="f" autofocus> <label for="">Femenino</label><br>
-                              <input id="genero" type="radio" class="" name="genero" value="o" autofocus> <label for="">Otros</label> <br>
-                          </div>
-                      </div>
-
-
-                          <label for="pais" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione un país') }}</label> <select class="form-control" id="pais" name="pais" value ="pais"   required autofocus>
-                            <option></option>
-                            <option>Argentina</option>
-                            <option>Brasil</option>
-                            <option>Chile</option>
-                            <option>Colombia</option>
-                            <option>Paraguay</option>
-                            <option>Uruguay</option>
-
-                          </select>
-
-                          @if ($errors->has('pais'))
-                              <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $errors->first('pais') }}</strong>
-                              </span>
-                          @endif
-
-                          <label for="provincia" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una provincia') }}</label> <select class="form-control" id="sel1" name="provincia" value ="{{ old('provincia') }}" required autofocus>
-                              <option></option>
-                              <option>Buenos Aires</option>
-                              <option>Santa Fe</option>
-                              <option>Catamarca</option>
-                              <option>Corrientes</option>
-                              <option>Entre Rios</option>
-                              <option>Santiago del Estero</option>
-                              <option>Santa Cruz</option>
-                          </select>
-                            @if ($errors->has('provincia'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('provincia') }}</strong>
-                                </span>
-                            @endif
-
-                            <label for="ciudad" class="col-md-4 col-form-label text-md-left">{{ __('Seleccione una ciudad') }}</label> <select class="form-control" id="sel1" name="ciudad" value ="{{ old('ciudad') }}" required autofocus>
->>>>>>> 46d77aee9d7625fdc0c5bcccbf47fcc3e093956b
->>>>>>> e78e984497f270d19dd9b28924d7a86ac75c6098
                               <option></option>
                               <option>Capital Federal</option>
                               <option>Gran Buenos Aires</option>
@@ -193,15 +140,13 @@
                             </div>
                             <br>
 
-                        <!-- <div class="form-group row mb-0">
+                        <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4-right">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registrar') }}
                                 </button><br>
                             </div>
-                        </div> -->
-
-                        <button class="btn btn-dark" type="submit">Registrarse</button>
+                        </div>
 
                     </form>
                 </div>
