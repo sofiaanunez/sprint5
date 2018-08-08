@@ -1,0 +1,114 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Roboto', sans-serif; font-size: 14px;background-color: black;}
+
+/*HEADER */
+
+header {
+  position: absolute;
+  right: 5%;
+  width: 90%;
+  padding-top: 3%;
+}
+header h2 {
+  font-size: 1em;
+}
+header h2 a {
+  float: left;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: white;
+  padding: 0.3%;
+}
+
+header nav li{
+  float: right;
+  font-size: 0.8em;
+  list-style: none;
+  font-weight: bold;
+}
+
+header nav li a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+
+}
+
+header nav li a{
+  text-decoration: none;
+  padding: 1vw;
+  color: black;
+}
+
+.row{
+  color: white;
+}
+
+.jumbotron h1{
+  color:white;
+}
+
+.jumbotron h3{
+  color:white;
+}
+
+.opciones {
+  width: 100%;
+  background-color: black;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+i {
+  color: black;
+}
+i:hover {
+  color: white;
+}
+
+#redes i {
+  color: white;
+}
+
+#redes i:hover {
+  color: white;
+}
+#legal {
+  color: white;
+  font-size: 0.8em;
+}
+
+          /* TABLET */
+
+@media (min-width: 768px) {
+  header h2 a {
+    font-size: 1em;
+  }
+
+  header nav li{
+    font-size: 0.9em;
+  }
+
+
+@media (min-width: 1024px) {
+  header h2 a {
+    font-size: 1.5em;
+  }
+
+  header nav li{
+    font-size: 1.2em;
+  }
+
+  /* FIN HEADER */
+
+  /* RUBROS */
+
+  .opciones {
+  width: 100%;
+  background-color: black;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

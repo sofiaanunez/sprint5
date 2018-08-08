@@ -1,6 +1,5 @@
 <header>
    <nav>
-
      <div class="btn-group float-right">
          <!-- Authentication Links -->
          @guest
@@ -13,8 +12,9 @@
          @else
 
             <li class="nav-item dropdown">
+
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                      Bienvenide {{ Auth::user()->nombre }}  <span class="caret"></span>
+                      ¡Hola, {{ Auth::user()->nombre }}!  <span class="caret"></span>
                     </a>
 
                   <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
@@ -41,4 +41,6 @@
            @endguest
      </div>
    </nav>
+
+   </script>
  </header>

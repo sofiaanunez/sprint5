@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <link rel="stylesheet" href="/css/estilo2.css">
 @guest
      <div class="container">
        <a class="navbar-brand" href="./"><b>Servici.Ar</b></a>

@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/contarUsuarios', 'contadorUsuarios@contarUsuarios');
 
 Route::get('/perfil', 'perfilControlador@perfil')->name('perfil');
 
@@ -50,4 +50,3 @@ Route::get('storage/{archivo}', function ($archivo) {
      abort(404);
 });
 Auth::routes();
-
