@@ -32,7 +32,7 @@
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                              
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
@@ -70,4 +70,5 @@
 <br>
 
   <script src="/js/login.js"></script>
+  <script src="/js/theme.js"></script>
 @endsection

@@ -12,7 +12,7 @@
 
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}"  files="true" enctype="multipart/form-data">
+                    <form method="POST" id="register" action="{{ route('register') }}" aria-label="{{ __('Register') }}"  files="true" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group row">
@@ -21,11 +21,11 @@
                             <div class="col-md-6">
                                 <input id="nombre" type="text" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" name="nombre" value="{{ old('nombre') }}" required autofocus>
 
-                                @if ($errors->has('nombre'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('nombre') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
 
@@ -35,11 +35,11 @@
                             <div class="col-md-6">
                                 <input id="apellido" type="text" class="form-control{{ $errors->has('apellido') ? ' is-invalid' : '' }}" name="apellido" value="{{ old('apellido') }}" required autofocus>
 
-                                @if ($errors->has('apellido'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('apellido') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
 
@@ -49,11 +49,11 @@
                             <div class="col-md-6">
                                 <input id="fecha_nacimiento" type="date" class="form-control{{ $errors->has('fecha_nacimiento') ? ' is-invalid' : '' }}" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}" required autofocus>
 
-                                @if ($errors->has('fecha_nacimiento'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('fecha_nacimiento') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
 
@@ -64,11 +64,11 @@
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
-                                @if ($errors->has('email'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
 
@@ -78,11 +78,11 @@
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('password'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
 
@@ -101,11 +101,11 @@
                             <div class="col-md-6">
                                 <input id="profesion" type="text" class="form-control{{ $errors->has('profesion') ? ' is-invalid' : '' }}" name="profesion" value="{{ old('profesion') }}" required autofocus>
 
-                                @if ($errors->has('profesion'))
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('profesion') }}</strong>
                                     </span>
-                                @endif
+
                             </div>
                         </div>
                       </div>
@@ -137,15 +137,17 @@
                                     </span>
                                 @endif
 
+                                <div class="form-group row mb-0">
+                                    <div class="col-md-6 offset-md-4-right">
+                                        <button type="submit" id="botonRegistrar" class="btn btn-primary">
+                                            {{ __('Registrar') }}
+                                        </button><br>
+                                    </div>
+
                             </div>
                             <br>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4-right">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Registrar') }}
-                                </button><br>
-                            </div>
+
                         </div>
 
                     </form>
@@ -154,4 +156,7 @@
           </div>
 
 <br>
+<script src="/js/register.js">
+
+</script>
 @endsection

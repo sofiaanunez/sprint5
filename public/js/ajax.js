@@ -8,6 +8,6 @@ window.addEventListener('load',function(){
   })
   .then(function (data){
     console.log(data);
-    contador.innerHTML += data;
+    contador.innerHTML += "Ya somos " + data + " usuarios!";
   })
 });

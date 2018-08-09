@@ -36,8 +36,38 @@ header nav li a:hover {
 header nav li a{
   text-decoration: none;
   padding: 1vw;
-  color: black;
+  color: white;
 }
+
+#headerIndexx{
+  background-color: #421287;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#contador{
+  border-radius: 10px;
+  color:white;
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  background-color: #421287;
+}
+
+#pincel{
+  color:white;
+}
+
+#btnThemeChanged{
+  background-color: #421287;
+  border-color: #421287;
+}
+
+#elemfooter{
+  background-color: #421287;
+  border-color: #421287;
+}
+
 
 .divisor {
   width: 100%;
@@ -388,6 +418,8 @@ width: 500px;
 width: 20vw;
 font-size: 1.2em;
 }
+
+
 
 /* FIN CONTENEDORES */
 

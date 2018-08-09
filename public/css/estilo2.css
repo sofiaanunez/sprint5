@@ -36,7 +36,7 @@ header nav li a:hover {
 header nav li a{
   text-decoration: none;
   padding: 1vw;
-  color: black;
+  color: white;
 }
 
 .row{
@@ -51,6 +51,37 @@ header nav li a{
   color:white;
 }
 
+#header{
+  background-color: #F6580B;
+}
+
+#headerIndexx{
+  background-color: #F6580B;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#otroBuscador{
+  background-color: #F6580B;
+  border-color: #F6580B;
+}
+
+#btnThemeChanged{
+  background-color: #F6580B;
+  border-color: #F6580B;
+}
+
+#contador{
+  border-radius: 10px;
+  color:white;
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  background-color: #F6580B;
+  border-color: #F6580B;
+}
+
+
 .opciones {
   width: 100%;
   background-color: black;
@@ -59,6 +90,43 @@ header nav li a{
   flex-direction: column;
   justify-content: center;
 }
+  /*servicios*/
+h3{
+  color:white;
+}
+#listadoServicios{
+  padding-top: 20px;
+  background-color: #44256F;
+  color:white;
+}
+
+#boton{
+  background-color: black;
+}
+
+.nav-link active{
+  font-size: 13px;
+}
+ #editar{
+   color:black;
+ }
+
+ #eliminar{
+   color:black;
+ }
+
+ #botonServicios{
+   background-color: #6526BE;
+ }
+
+ /*fin servicios*/
+
+ /*footer*/
+ #elemfooter{
+   background-color: #F6580B;
+   border-color: #F6580B;
+ }
+ /*fin footer*/
 
 i {
   color: black;
@@ -78,6 +146,24 @@ i:hover {
   color: white;
   font-size: 0.8em;
 }
+
+/*registro*/
+  .card{
+    background-color: #6526BE;
+  }
+
+  #botonRegistrar{
+    background-color: #17202A;
+    border-color: #17202A;
+    
+  }
+/*faqs*/
+  h1{
+    color:#6C29DC;
+  }
+  p{
+    color:white;
+  }
 
           /* TABLET */
 
@@ -111,4 +197,8 @@ i:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+label{
+  color:white;
 }

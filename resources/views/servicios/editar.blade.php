@@ -24,7 +24,8 @@
         </div>
       @endif --}}
 
-  <form class="" action="/servicio/editar/{{$servicios->id}}" method="post"><br>
+  <form class="" id="servicios" action="/servicio/editar/{{$servicios->id}}" method="post"><br>
+    <script src="/js/servicios.js"></script>
 
     @if (session()->has('success'))
     <div class="alert alert-success" role="alert">
@@ -42,11 +43,11 @@
         <div class="col-md-4">
             <input id="rubro" type="text" class="form-control{{ $errors->has('rubro') ? ' is-invalid' : '' }}" name="rubro" value="{{$servicios['rubro']}}" required autofocus>
 
-            @if ($errors->has('rubro'))
+
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('rubro') }}</strong>
                 </span>
-            @endif
+
         </div></div>
 
         <div class="form-group row">
@@ -54,11 +55,11 @@
         <div class="col-md-4">
             <input id="descripcion" type="text" class="form-control{{ $errors->has('descripcion') ? ' is-invalid' : '' }}" name="descripcion" value="{{$servicios['descripcion']}}" required autofocus>
 
-            @if ($errors->has('rubro'))
+
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('descripcion') }}</strong>
                 </span>
-            @endif
+
         </div></div>
 
         <div class="form-group row">
@@ -66,11 +67,11 @@
         <div class="col-md-4">
             <input id="duracion" type="text" class="form-control{{ $errors->has('duracion') ? ' is-invalid' : '' }}" name="duracion" value="{{$servicios['duracion']}}" required autofocus>
 
-            @if ($errors->has('duracion'))
+
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('duracion') }}</strong>
                 </span>
-            @endif
+
         </div></div>
 
         <div class="form-group row">
@@ -78,11 +79,11 @@
         <div class="col-md-4">
             <input id="monto" type="text" class="form-control{{ $errors->has('monto') ? ' is-invalid' : '' }}" name="monto" value="{{$servicios['monto']}}" required autofocus>
 
-            @if ($errors->has('monto'))
+
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('monto') }}</strong>
                 </span>
-            @endif
+
         </div></div>
 
         <br>
@@ -94,7 +95,7 @@
 
 
   </div> <br>
+
 </form>
   @endguest
 @endsection
-

@@ -25,8 +25,9 @@
 
       <div class="container" id="indexContainer">
         <h1>servici.AR</h1>
-
-        <button type="button" class="btn btn-secondary btn-sm" id="btnThemeChanged">Cambiar tema</button>
+        <div class="container" id="contador"></div>
+        <br>
+        <button type="button" class="btn btn-secondary btn-sm" id="btnThemeChanged"><i class="fas fa-paint-brush" id="pincel"></i></button>
 
         <br><br>
     		<h3>Todo lo que buscas ¡En un solo lugar!</h3><br>
@@ -34,7 +35,7 @@
           <div class="input-group mb-3">
             <input type="text" class="form-control" id="buscador" placeholder="Encontra lo que buscas..." aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button type="button" class="btn btn-dark">Buscar</button>
+              <button type="button" id='otroBuscador' class="btn btn-dark">Buscar</button>
             </div>
           </div>
         </form>
@@ -62,15 +63,13 @@
 
         <script src="/js/ajax.js"></script>
 
-        <div class="" id="contador"></div>
-
-
       <div class="container">
         <div class="row">
 
           @foreach ($mostrar as $servicio)
           <div class="col-sm-4">
             <div class="panel panel-primary">
+
               <div class="panel-heading"><h4>{{$servicio->rubro}}</h4></div>
             <div class="panel-footer"><h6>{{$servicio->descripcion}}</h6></div>
             </div>

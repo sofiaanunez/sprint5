@@ -2,6 +2,7 @@
 
 @section('contenido')
 <br>
+
 <div class="card">
 
 <h3 class="card-header">Mi perfil</h3>
@@ -23,6 +24,7 @@
 </div>
 </div>
 </div>
+<br>
 
 
 @endsection

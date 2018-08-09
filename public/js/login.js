@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener('load',function(){
 	var form = document.querySelector('#login');
 
   var elementos = form.elements;
@@ -29,4 +29,4 @@ window.onload = function () {
       this.parentNode.querySelector('span strong').innerHTML = '';
     }
   });
-}
+});

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" id="header">
   <link rel="stylesheet" href="/css/estilo2.css">
 @guest
      <div class="container">

@@ -1,6 +1,6 @@
 <header>
    <nav>
-     <div class="btn-group float-right">
+     <div class="btn-group float-right" id="headerIndexx">
          <!-- Authentication Links -->
          @guest
              <li class="nav-item">
